@@ -3,17 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); // Points to welcome.blade.php
 });
 
-Route::get('/Home', function () {
-    return 'home';
-});
-
-Route::get('/About', function () {
-    return 'About';
-});
-
-Route::get('/Help', function () {
-    return 'Help';
+Route::get('/StudentSavePage', function () {
+    return view('Index'); // Points to Index.blade.php
 });
